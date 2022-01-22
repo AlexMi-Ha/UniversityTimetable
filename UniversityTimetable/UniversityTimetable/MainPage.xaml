@@ -2,7 +2,7 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             Title="University Timetable"
-            xmlns:local="clr-namespace:UniversityTimetable.Pages"
+            xmlns:local="clr-namespace:UniversityTimetable"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             x:Class="UniversityTimetable.MainPage"
             BarBackgroundColor="{StaticResource BackgroundLight}">

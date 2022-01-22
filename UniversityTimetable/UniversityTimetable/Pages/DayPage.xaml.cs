@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace UniversityTimetable.Pages {
+namespace UniversityTimetable {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DayPage : ContentPage {
         public DayPage() {

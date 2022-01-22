@@ -9,8 +9,8 @@ using Xamarin.Forms.Xaml;
 
 namespace UniversityTimetable {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SettingsPage : ContentPage {
-        public SettingsPage() {
+    public partial class WeekDayView : ContentView {
+        public WeekDayView() {
             InitializeComponent();
         }
     }

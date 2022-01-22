@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UniversityTimetable.WeekDayView"
+             xmlns:local="clr-namespace:UniversityTimetable">
+    <ContentView.Resources>
+        <local:TopMarginValueConverter x:Key="TopMarginValueConverter" />
+    </ContentView.Resources>
+    <ContentView.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" >
+            <CollectionView ItemsSource="{Binding Appointments}" Margin="0">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <local:AppointmentView />
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
