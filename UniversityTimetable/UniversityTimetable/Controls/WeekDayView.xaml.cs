@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace UniversityTimetable {
-    public partial class MainPage : TabbedPage {
-        public MainPage() {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class WeekDayView : ContentView {
+        public WeekDayView() {
             InitializeComponent();
         }
     }

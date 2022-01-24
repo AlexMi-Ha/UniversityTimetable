@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:BasePage x:TypeArguments="core:WeekPageViewModel"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UniversityTimetable"
+             xmlns:core="clr-namespace:UniversityTimetable.Core;assembly=UniversityTimetable.Core"
+             x:Class="UniversityTimetable.WeekPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource BackgroundDark}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+                <BoxView Grid.RowSpan="20" Grid.Column="0" WidthRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" VerticalOptions="FillAndExpand" HorizontalOptions="End" x:Name="_calendarGrid"/>
+                <BoxView Grid.RowSpan="20" Grid.Column="1" WidthRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" VerticalOptions="FillAndExpand" HorizontalOptions="End" />
+                <BoxView Grid.RowSpan="20" Grid.Column="2" WidthRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" VerticalOptions="FillAndExpand" HorizontalOptions="End" />
+                <BoxView Grid.RowSpan="20" Grid.Column="3" WidthRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" VerticalOptions="FillAndExpand" HorizontalOptions="End" />
+                <BoxView Grid.RowSpan="20" Grid.Column="4" WidthRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" VerticalOptions="FillAndExpand" HorizontalOptions="End" />
+
+                <BoxView Grid.ColumnSpan="6" Grid.Row="0"  HeightRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                <BoxView Grid.ColumnSpan="6" Grid.Row="2"  HeightRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                <BoxView Grid.ColumnSpan="6" Grid.Row="4"  HeightRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                <BoxView Grid.ColumnSpan="6" Grid.Row="6"  HeightRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                <BoxView Grid.ColumnSpan="6" Grid.Row="8"  HeightRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                <BoxView Grid.ColumnSpan="6" Grid.Row="10" HeightRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                <BoxView Grid.ColumnSpan="6" Grid.Row="12" HeightRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                <BoxView Grid.ColumnSpan="6" Grid.Row="14" HeightRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                <BoxView Grid.ColumnSpan="6" Grid.Row="16" HeightRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+                <BoxView Grid.ColumnSpan="6" Grid.Row="18" HeightRequest="1" BackgroundColor="{StaticResource TextForegroundDark}" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+
+                <Label Grid.Row="0" Grid.Column="0" Text="8:00" />
+                <Label Grid.Row="2" Grid.Column="0" Text="9:00" />
+                <Label Grid.Row="4" Grid.Column="0" Text="10:00" />
+                <Label Grid.Row="6" Grid.Column="0" Text="11:00" />
+                <Label Grid.Row="8" Grid.Column="0" Text="12:00" />
+                <Label Grid.Row="10" Grid.Column="0" Text="13:00" />
+                <Label Grid.Row="12" Grid.Column="0" Text="14:00" />
+                <Label Grid.Row="14" Grid.Column="0" Text="15:00" />
+                <Label Grid.Row="16" Grid.Column="0" Text="16:00" />
+                <Label Grid.Row="18" Grid.Column="0" Text="17:00" />
+
+                <!-- Monday -->
+                <local:WeekDayView Grid.Column="1" Grid.Row="0" Grid.RowSpan="20" VerticalOptions="FillAndExpand" BindingContext="{Binding Monday}"/>
+                <!-- Tuesday -->
+                <local:WeekDayView Grid.Column="2" Grid.Row="0" Grid.RowSpan="20" VerticalOptions="FillAndExpand" BindingContext="{Binding Tuesday}"/>
+                <!-- Wednesday -->
+                <local:WeekDayView Grid.Column="3" Grid.Row="0" Grid.RowSpan="20" VerticalOptions="FillAndExpand" BindingContext="{Binding Wednesday}"/>
+                <!-- Thursday -->
+                <local:WeekDayView Grid.Column="4" Grid.Row="0" Grid.RowSpan="20" VerticalOptions="FillAndExpand" BindingContext="{Binding Thursday}"/>
+                <!-- Friday -->
+                <local:WeekDayView Grid.Column="5" Grid.Row="0" Grid.RowSpan="20" VerticalOptions="FillAndExpand" BindingContext="{Binding Friday}"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</local:BasePage>

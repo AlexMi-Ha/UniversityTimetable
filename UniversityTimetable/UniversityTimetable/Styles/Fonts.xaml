@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:UniversityTimetable">
+
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="FontFamily" Value="Myriad Pro" />
+        <Setter Property="TextColor" Value="{StaticResource TextForegroundLight}" />
+    </Style>
+    <Style TargetType="{x:Type Label}">
+        <Setter Property="FontFamily" Value="Myriad Pro" />
+        <Setter Property="TextColor" Value="{StaticResource TextForegroundLight}" />
+    </Style>
+    <Style TargetType="{x:Type Entry}">
+        <Setter Property="FontFamily" Value="Myriad Pro" />
+        <Setter Property="TextColor" Value="{StaticResource TextForegroundLight}" />
+    </Style>
+
+
+</ResourceDictionary>
