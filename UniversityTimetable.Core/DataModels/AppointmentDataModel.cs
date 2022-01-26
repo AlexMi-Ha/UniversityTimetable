@@ -76,6 +76,10 @@ namespace UniversityTimetable.Core {
             AppointmentHeight = _duration.TotalHours * (_heightPerHour + .9);
         }
 
+
+        public override string ToString() {
+            return $"({StartTime.ToString("hh:mm")} - {EndTime.ToString("hh:mm")}): {AppointmentTitle}";
+        }
         #endregion
     }
 }

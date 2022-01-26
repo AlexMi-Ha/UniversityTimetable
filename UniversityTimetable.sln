@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityTimetable.Android
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityTimetable", "UniversityTimetable\UniversityTimetable\UniversityTimetable.csproj", "{25D64F08-22F9-4B4C-BFBF-3232EE77BE74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityTimetable.Core", "UniversityTimetable.Core\UniversityTimetable.Core.csproj", "{76E497EE-4A37-4DE9-A7BA-98FC53216455}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityTimetable.Core", "UniversityTimetable.Core\UniversityTimetable.Core.csproj", "{76E497EE-4A37-4DE9-A7BA-98FC53216455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityTimetable.CLI", "UniversityTimetable.CLI\UniversityTimetable.CLI.csproj", "{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,22 @@ Global
 		{76E497EE-4A37-4DE9-A7BA-98FC53216455}.Release|x64.Build.0 = Release|Any CPU
 		{76E497EE-4A37-4DE9-A7BA-98FC53216455}.Release|x86.ActiveCfg = Release|Any CPU
 		{76E497EE-4A37-4DE9-A7BA-98FC53216455}.Release|x86.Build.0 = Release|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Debug|ARM.Build.0 = Debug|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Debug|x64.Build.0 = Debug|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Debug|x86.Build.0 = Debug|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Release|ARM.Build.0 = Release|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Release|x64.ActiveCfg = Release|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Release|x64.Build.0 = Release|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Release|x86.ActiveCfg = Release|Any CPU
+		{C74C1E3C-804B-4C99-9D5B-11988CA5CA08}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
