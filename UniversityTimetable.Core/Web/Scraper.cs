@@ -54,7 +54,9 @@ namespace UniversityTimetable.Core {
 
                         // Extract information from text using regex
                         string text = row[col - 1].SelectNodes("./a")[0].InnerText.Replace("&nbsp;", " ");
-                        string pattern = @"^(\d{2}:\d{2}).{6}-(\d{2}:\d{2})(.+)";
+
+                        // TODO maybe rework regex pattern to not cut of at 'erstellt'. ... Find a smarter way
+                        string pattern = @"^(\d{2}:\d{2}).{6}-(\d{2}:\d{2})(.+)erstellt.+";
                         var matches = Regex.Matches(text, pattern);
 
                         if (matches.Count > 0 && matches[0].Groups.Count > 1) {
@@ -63,6 +65,7 @@ namespace UniversityTimetable.Core {
                             // TODO some appointments before 8 are information about the day -> maybe display it somehow?
 
                             DateTime end = DateTime.Parse(matches[0].Groups[2].Value);
+
 
                             appointments[day].Add(new AppointmentDataModel(start, end) {
                                 AppointmentTitle = matches[0].Groups[3].Value
