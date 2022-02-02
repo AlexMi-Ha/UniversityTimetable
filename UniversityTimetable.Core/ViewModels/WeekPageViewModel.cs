@@ -40,12 +40,12 @@ namespace UniversityTimetable.Core {
 
             Monday = new WeekDayViewModel {
                 Appointments = new System.Collections.ObjectModel.ObservableCollection<AppointmentDataModel> {
-                    new AppointmentDataModel {
+                    new AppointmentDataModel(oneHourHeight) {
                         AppointmentTitle = "Bro",
                         AppointmentHeight = 4.25*(oneHourHeight+.9),
                         AppointmentMargin = 0.5*(oneHourHeight+.9)
                     },
-                    new AppointmentDataModel {
+                    new AppointmentDataModel(oneHourHeight) {
                         AppointmentTitle = "Bro",
                         AppointmentHeight = 2.5*(oneHourHeight+.9),
                         AppointmentMargin = 0.75*(oneHourHeight+.9)
@@ -55,12 +55,12 @@ namespace UniversityTimetable.Core {
             };
             Tuesday = new WeekDayViewModel {
                 Appointments = new System.Collections.ObjectModel.ObservableCollection<AppointmentDataModel> {
-                    new AppointmentDataModel {
+                    new AppointmentDataModel(oneHourHeight) {
                         AppointmentTitle = "Bro",
                         AppointmentHeight = 3.25*(oneHourHeight+.9),
                         AppointmentMargin = 0.5*(oneHourHeight+.9)
                     },
-                    new AppointmentDataModel {
+                    new AppointmentDataModel(oneHourHeight) {
                         AppointmentTitle = "Bro",
                         AppointmentHeight = 1.5*(oneHourHeight+.9),
                         AppointmentMargin = 1.25*(oneHourHeight+.9)
@@ -70,12 +70,12 @@ namespace UniversityTimetable.Core {
             };
             Wednesday = new WeekDayViewModel {
                 Appointments = new System.Collections.ObjectModel.ObservableCollection<AppointmentDataModel> {
-                    new AppointmentDataModel {
+                    new AppointmentDataModel(oneHourHeight) {
                         AppointmentTitle = "Bro",
                         AppointmentHeight = 3.25*(oneHourHeight+.9),
                         AppointmentMargin = 0.5*(oneHourHeight+.9)
                     },
-                    new AppointmentDataModel {
+                    new AppointmentDataModel(oneHourHeight) {
                         AppointmentTitle = "Bro",
                         AppointmentHeight = 2.5*(oneHourHeight+.9),
                         AppointmentMargin = .75*(oneHourHeight+.9)
@@ -85,11 +85,11 @@ namespace UniversityTimetable.Core {
             };
             Thursday = new WeekDayViewModel {
                 Appointments = new System.Collections.ObjectModel.ObservableCollection<AppointmentDataModel> {
-                    new AppointmentDataModel {
+                    new AppointmentDataModel(oneHourHeight) {
                         AppointmentTitle = "Bro",
                         AppointmentHeight = 4.25*(oneHourHeight+.9)
                     },
-                    new AppointmentDataModel {
+                    new AppointmentDataModel(oneHourHeight) {
                         AppointmentTitle = "Bro",
                         AppointmentHeight = 1.5*(oneHourHeight+.9),
                         AppointmentMargin = .75*(oneHourHeight+.9)
@@ -99,12 +99,12 @@ namespace UniversityTimetable.Core {
             };
             Friday = new WeekDayViewModel {
                 Appointments = new System.Collections.ObjectModel.ObservableCollection<AppointmentDataModel> {
-                    new AppointmentDataModel {
+                    new AppointmentDataModel(oneHourHeight) {
                         AppointmentTitle = "Bro",
                         AppointmentHeight = 3.25*(oneHourHeight+.9),
                         AppointmentMargin = 0.5*(oneHourHeight+.9)
                     },
-                    new AppointmentDataModel {
+                    new AppointmentDataModel(oneHourHeight) {
                         AppointmentTitle = "Bro",
                         AppointmentHeight = 2.5*(oneHourHeight+.9),
                         AppointmentMargin = 1.25*(oneHourHeight+.9)
